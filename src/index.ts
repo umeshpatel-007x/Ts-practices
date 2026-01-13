@@ -1,8 +1,22 @@
 let username: string = "Umesh";
 let age: number = 28;
 
-function greet(name: string): string {
-  return `Hello ${name}`;
-}
+let isTriggered: boolean = false;
 
-console.log(greet(username));
+let scores: number[] = [10, 20, 30];
+
+let names: Array<string> = ["Amit", "Umesh"];
+
+let user: [number, string, boolean];
+
+user = [1, "Umesh", true];
+
+let value: any = 10;
+
+value = "hello";
+value = true;
+
+let data: unknown;
+
+data = "Hello";
+data = 100;
