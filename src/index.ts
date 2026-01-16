@@ -168,3 +168,38 @@ type UserWithoutEmail = Omit<User, "email">;
 //   id: 1,
 //   name: "Umesh"
 // };
+
+// Union Types
+let num: number | string;
+
+num = 101; // OK
+num = "A101"; // OK
+
+// Intersection Types
+
+type Personn = {
+  name: string;
+};
+
+type Employeee = {
+  id: number;
+};
+
+type EmployeeDetails = Person & Employee;
+
+// const empp: EmployeeDetails = {
+//   name: "Umesh",
+//   id: 101
+// };
+
+// Classes with Constructors
+
+class User {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+}
